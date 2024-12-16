@@ -1,8 +1,8 @@
 #include <LPC214X.H>
 #include<stdint.h>
-#define DELAY_1MS			60000     /*    cclk=60000000 Hz, PR(prescalar value)=60000-1, time we get 1ms i.e; 60000/60MHz =1ms*/
-#define DELAY_1SEC		60000000	/* PR=60000000-1 for 1 second */
-#define DELAY_1us			60					// PR=60-1 for 1 micro second1
+#define DELAY_1MS      60000       // cclk=60000000 Hz, PR(prescalar value)=60000-1, time we get 1ms i.e; 60000/60MHz =1ms
+#define DELAY_1SEC     60000000	  // PR=60000000-1 for 1 second 
+#define DELAY_1us      60	  // PR=60-1 for 1 micro second1
 
 void Timer0_init_1sec(uint32_t delay);
 void Timer0_init_1Ms(uint32_t delay);
